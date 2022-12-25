@@ -8,10 +8,13 @@ app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/public'));
 app.use(express.urlencoded({ extended: false}))
 
+// DB connection
 mongoose.connect('mongodb://127.0.0.1/urlShortener', {
     useNewUrlParser: true, useUnifiedTopology: true
 })
 
+
+// Routings
 app.get('/', async (req, res) => {
     const shortUrls = await ShortUrl.find()
     res.render('index', { shortUrls: shortUrls});
@@ -32,6 +35,7 @@ app.get('/:shortUrl', async (req, res) => {
     res.redirect(shortUrl.full)
 })
 
+// Listening
 app.listen(process.env.PORT || 3000);
 
 
