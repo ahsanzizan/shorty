@@ -10,6 +10,7 @@
 <body>
     <div class="container mx-auto">
         <h1 class="font-bold mt-5 text-3xl uppercase">URL Shortener</h1>
+        <h3 class="text-base font-semibold text-yellow-200">To access the url in your browser enter : DOMAIN_NAME/:shortenedId</h3>
         <form action="/shortUrls" method="POST" class="my-12">
             <div class="md:w-1/3">
                 <label class=" text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="fullUrl">
@@ -19,7 +20,7 @@
             <div class="md:w-2/3 mb-5">
                 <input required class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-800" id="fullUrl" type="url" placeholder="https://..." name="fullUrl">
             </div>
-            <button type="submit" class="bg-gray-700 p-3 font-bold text-white rounded-tl-lg rounded-br-lg hover:shadow-xl">Shorten</button>
+            <button type="submit" class="bg-gray-700 p-3 font-semibold text-white rounded-tl-lg rounded-br-lg hover:shadow-xl">Shorten</button>
         </form>
         
         <div class="overflow-x-auto relative">
@@ -27,7 +28,7 @@
                 <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                     <tr>
                         <th class="py-3 px-6">Full URL</th>
-                        <th class="py-3 px-6">Shortened</th>
+                        <th class="py-3 px-6">Shortened ID</th>
                         <th class="py-3 px-6">Clicks</th>
                     </tr>
                 </thead>
