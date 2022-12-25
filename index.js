@@ -9,7 +9,7 @@ app.use(express.static(__dirname + '/public'));
 app.use(express.urlencoded({ extended: false}))
 
 // DB connection
-mongoose.connect('mongodb://127.0.0.1/urlShortener', {
+mongoose.connect(process.env.DB_URL, {
     useNewUrlParser: true, useUnifiedTopology: true
 })
 
