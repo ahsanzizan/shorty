@@ -1,7 +1,6 @@
 const express = require('express');
 const ShortUrl = require('./models/shortUrl')
 const mongoose = require('mongoose');
-const shortUrl = require('./models/shortUrl');
 const app = express();
 
 app.set('view engine', 'ejs');
