@@ -1,5 +1,5 @@
 ```console
-git clone https://github.com/ahsanAazizan/node-urlshortener.git
+git clone https://github.com/ahsanAazizan/shorty.git
 ```
 
 # Shorty
