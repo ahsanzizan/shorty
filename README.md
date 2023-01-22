@@ -12,6 +12,9 @@ npm i
 npm start
 ```
 
-install nodejs and npm :
+### install nodejs and npm :
 https://nodejs.org/
 https://www.mongodb.com/docs/manual/installation/
+
+
+![preview](/preview.png "Preview")
